@@ -42,7 +42,7 @@ This project aims to build a platform where users can create, share, and collabo
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ggram.git
+   git clone https://github.com/secslayer/Ggram.git
    cd ggram
    ```
 
