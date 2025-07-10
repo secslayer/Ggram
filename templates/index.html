@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ settings.app_name }} - {{ settings.app_description }}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Ggram</h1>
+            <p>Collaborative Agentic AI Platform</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="features">
+            <h2>Core Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Agent Creation</h3>
+                    <p>Create custom AI agents using LangChain with NVIDIA models as the backend LLM.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>A2A Communication</h3>
+                    <p>Agents communicate and negotiate using the Google A2A protocol.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Similarity Search</h3>
+                    <p>Find agents with complementary capabilities using GNN-based similarity search.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Graph Reinforcement Learning</h3>
+                    <p>Optimize the network of collaborating agents using GRL with user feedback as the reward signal.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Get Started</h2>
+            <div class="button-group">
+                <a href="/api/docs" class="button primary">API Documentation</a>
+                <a href="/static/docs/user-guide.html" class="button secondary">User Guide</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Ggram - Collaborative Agentic AI Platform</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

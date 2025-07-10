@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ggram - User Guide</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <style>
+        .documentation {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .documentation h1 {
+            border-bottom: 2px solid #4a6bff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .documentation h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #4a6bff;
+        }
+        
+        .documentation h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .documentation code {
+            background-color: #f5f5f5;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        
+        .documentation pre {
+            background-color: #f5f5f5;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        .documentation ul, .documentation ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .documentation img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .back-to-home {
+            display: inline-block;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ggram User Guide</h1>
+            <p>Learn how to use the Collaborative Agentic AI Platform</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="documentation">
+            <h1>User Guide</h1>
+            
+            <h2>Introduction</h2>
+            <p>Welcome to Ggram, a Collaborative Agentic AI Platform that allows users to create, share, and collaborate with AI agents. This guide will help you understand how to use the platform effectively.</p>
+            
+            <h2>Getting Started</h2>
+            <h3>Creating an Account</h3>
+            <p>To use Ggram, you need to create an account:</p>
+            <ol>
+                <li>Navigate to the signup page</li>
+                <li>Enter your email, username, and password</li>
+                <li>Click the "Sign Up" button</li>
+                <li>Verify your email address (if required)</li>
+            </ol>
+            
+            <h3>Logging In</h3>
+            <p>Once you have an account, you can log in:</p>
+            <ol>
+                <li>Navigate to the login page</li>
+                <li>Enter your email/username and password</li>
+                <li>Click the "Log In" button</li>
+            </ol>
+            
+            <h2>Creating Agents</h2>
+            <p>Ggram allows you to create custom AI agents:</p>
+            <ol>
+                <li>Navigate to the "My Agents" section</li>
+                <li>Click the "Create New Agent" button</li>
+                <li>Fill in the agent details:
+                    <ul>
+                        <li>Name: A unique name for your agent</li>
+                        <li>Description: What your agent does</li>
+                        <li>Agent Type: Choose from Simple, Tool, RAG, or Graph</li>
+                        <li>LLM Settings: Configure the language model parameters</li>
+                        <li>Capabilities: Define what your agent can do</li>
+                    </ul>
+                </li>
+                <li>Click "Create Agent" to save</li>
+            </ol>
+            
+            <h3>Agent Types</h3>
+            <p>Ggram supports several agent types:</p>
+            <ul>
+                <li><strong>Simple Agent</strong>: Basic conversational agent using a LLMChain</li>
+                <li><strong>Tool Agent</strong>: Agent that can use tools to perform tasks</li>
+                <li><strong>RAG Agent</strong>: Retrieval-Augmented Generation agent that can access and use knowledge bases</li>
+                <li><strong>Graph Agent</strong>: Agent that can execute sequential chains of operations</li>
+            </ul>
+            
+            <h2>Agent Cards</h2>
+            <p>Agent Cards provide a standardized way to describe and share agents:</p>
+            <ol>
+                <li>Navigate to one of your agents</li>
+                <li>Click "Create Agent Card"</li>
+                <li>Fill in the card details:
+                    <ul>
+                        <li>Title: A catchy title for your agent</li>
+                        <li>Summary: Brief description of what it does</li>
+                        <li>Input Schema: Define the expected input format</li>
+                        <li>Output Schema: Define the expected output format</li>
+                        <li>Examples: Provide sample inputs and outputs</li>
+                        <li>Tags: Add relevant tags for discoverability</li>
+                    </ul>
+                </li>
+                <li>Click "Create Card" to save</li>
+            </ol>
+            
+            <h2>Agent Collaboration</h2>
+            <p>One of Ggram's key features is enabling agent collaboration:</p>
+            <ol>
+                <li>Navigate to the "Collaborations" section</li>
+                <li>Click "New Collaboration"</li>
+                <li>Select an initiator agent (one of your agents)</li>
+                <li>Select a collaborator agent (can be yours or another user's)</li>
+                <li>Define the collaboration parameters</li>
+                <li>Click "Start Collaboration"</li>
+            </ol>
+            
+            <h2>Finding Similar Agents</h2>
+            <p>Ggram uses advanced similarity search to help you find complementary agents:</p>
+            <ol>
+                <li>Navigate to the "Discover" section</li>
+                <li>Select one of your agents as the reference</li>
+                <li>Choose the similarity method (GNN or Jaccard)</li>
+                <li>Click "Find Similar Agents"</li>
+                <li>Browse the results and explore potential collaborations</li>
+            </ol>
+            
+            <h2>Providing Feedback</h2>
+            <p>User feedback helps improve agent performance:</p>
+            <ol>
+                <li>After using an agent or viewing a collaboration result</li>
+                <li>Click the "Provide Feedback" button</li>
+                <li>Rate the performance (1-5 stars)</li>
+                <li>Add optional comments</li>
+                <li>Click "Submit Feedback"</li>
+            </ol>
+            
+            <h2>API Access</h2>
+            <p>Ggram provides a comprehensive API for programmatic access:</p>
+            <p>Check the <a href="/api/docs">API Documentation</a> for detailed information on available endpoints and authentication.</p>
+            
+            <a href="/" class="button primary back-to-home">Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Ggram - Collaborative Agentic AI Platform</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
